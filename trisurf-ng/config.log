@@ -27,28 +27,12 @@ uname -v = #1 SMP Tue Jun 23 12:58:10 UTC 2020
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/yoav/.cargo/bin
-PATH: /home/yoav/anaconda3/bin
-PATH: /home/yoav/anaconda3/condabin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
 PATH: /usr/bin
 PATH: /sbin
 PATH: /bin
-PATH: /usr/games
-PATH: /usr/local/games
-PATH: /mnt/c/Windows/system32
-PATH: /mnt/c/Windows
-PATH: /mnt/c/Windows/System32/Wbem
-PATH: /mnt/c/Windows/System32/WindowsPowerShell/v1.0
-PATH: /mnt/c/Windows/System32/OpenSSH
-PATH: /mnt/c/Program Files/MiKTeX/miktex/bin/x64
-PATH: /mnt/c/Program Files (x86)/LyX 2.3/Perl/bin
-PATH: /mnt/c/PROGRA~1/MATLAB/R2020b/bin
-PATH: /mnt/c/Program Files/MATLAB/R2020b/bin
-PATH: /mnt/c/Users/yoavr/AppData/Local/Microsoft/WindowsApps
-PATH: /mnt/c/Users/yoavr/AppData/Local/Programs/Microsoft VS Code/bin
 PATH: /snap/bin
 
 
