@@ -244,10 +244,10 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
     for (j=0;j<vtx->neigh_no;j++){
         if (fabs(vtx->neigh[j]->c)>1e-15){
             xnorm=0.0; ynorm=0.0; znorm=0.0;
-            for (i=0;i<vtx->tristar_no;i++){
-                xnorm+=vtx->tristar[i]->xnorm;
-                ynorm+=vtx->tristar[i]->ynorm;
-                znorm+=vtx->tristar[i]->znorm;
+            for (i=0;i<vtx->neigh[j]->tristar_no;i++){
+                xnorm+=vtx->neigh[j]->tristar[i]->xnorm;
+                ynorm+=vtx->neigh[j]->tristar[i]->ynorm;
+                znorm+=vtx->neigh[j]->tristar[i]->znorm;
             }
             /*normalize*/
             norml=sqrt(xnorm*xnorm+ynorm*ynorm+znorm*znorm);
