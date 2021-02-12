@@ -213,14 +213,22 @@ inline ts_bool attraction_bond_energy(ts_bond *bond, ts_double w){
 }
 
 ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vtx_old){
-	if(fabs(vtx->c)<1e-15) return 0.0;
+	//Yoav- modified to include Vicsek Interaction
+
+    //self-factor: 3
+    //nearest neighbors
+    //
+    if(fabs(vtx->c)<1e-15) return 0.0;
 //	printf("was here");
 	if(fabs(vesicle->tape->F)<1e-15) return 0.0;
 
 	ts_double norml,ddp=0.0;
-	ts_uint i;
+	ts_uint i,j;
 	ts_double xnorm=0.0,ynorm=0.0,znorm=0.0;
-	/*find normal of the vertex as sum of all the normals of the triangles surrounding it. */
+    ts_double vixnorm=0.0,viynorm=0.0,viznorm=0.0;
+	
+    //vertex normal
+    /*find normal of the vertex as sum of all the normals of the triangles surrounding it. */
 	for(i=0;i<vtx->tristar_no;i++){
 			xnorm+=vtx->tristar[i]->xnorm;
 			ynorm+=vtx->tristar[i]->ynorm;
@@ -228,11 +236,34 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
 	}
 	/*normalize*/
 	norml=sqrt(xnorm*xnorm+ynorm*ynorm+znorm*znorm);
-	xnorm/=norml;
-	ynorm/=norml;
-	znorm/=norml;
-	/*calculate ddp, perpendicular displacement*/
-	ddp=xnorm*(vtx->x-vtx_old->x)+ynorm*(vtx->y-vtx_old->y)+znorm*(vtx->z-vtx_old->z);
+	vixnorm=3*xnorm/norml;
+	viynorm=3*ynorm/norml;
+	viznorm=3*znorm/norml;
+
+    //Nearest neighbors normals
+    for (j=0;j<vtx->neigh_no;j++){
+        if (fabs(vtx->neigh[j]->c)>1e-15){
+            xnorm=0.0; ynorm=0.0; znorm=0.0;
+            for (i=0;i<vtx->tristar_no;i++){
+                xnorm+=vtx->tristar[i]->xnorm;
+                ynorm+=vtx->tristar[i]->ynorm;
+                znorm+=vtx->tristar[i]->znorm;
+            }
+            /*normalize*/
+            norml=sqrt(xnorm*xnorm+ynorm*ynorm+znorm*znorm);
+            vixnorm+=xnorm/norml;
+            viynorm+=ynorm/norml;
+            viznorm+=znorm/norml;
+        }
+    }
+
+    norml=sqrt(vixnorm*vixnorm+viynorm*viynorm+viznorm*viznorm);
+    vixnorm/=norml;
+	viynorm/=norml;
+	viznorm/=norml;
+
+	/*calculate ddp, Viscek force directed displacement*/
+	ddp=vixnorm*(vtx->x-vtx_old->x)+viynorm*(vtx->y-vtx_old->y)+viznorm*(vtx->z-vtx_old->z);
 	/*calculate dE*/
 //	printf("ddp=%e",ddp);
 	return vesicle->tape->F*ddp;		
