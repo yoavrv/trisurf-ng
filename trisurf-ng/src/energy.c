@@ -236,9 +236,9 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
 	}
 	/*normalize*/
 	norml=sqrt(xnorm*xnorm+ynorm*ynorm+znorm*znorm);
-	vixnorm=3*xnorm/norml;
-	viynorm=3*ynorm/norml;
-	viznorm=3*znorm/norml;
+	vixnorm=1*xnorm/norml;
+	viynorm=1*ynorm/norml;
+	viznorm=1*znorm/norml;
 
     //Nearest neighbors normals
     for (j=0;j<vtx->neigh_no;j++){
