@@ -301,6 +301,7 @@ typedef struct {
 	long int plane_confinement_switch;
 	ts_double plane_d;
 	ts_double plane_F;
+	ts_double vicsek_strength;
 } ts_tape;
 
 

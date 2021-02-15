@@ -215,7 +215,7 @@ inline ts_bool attraction_bond_energy(ts_bond *bond, ts_double w){
 ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vtx_old){
 	//Yoav- modified to include Vicsek Interaction
 
-    //self-factor: 3
+    //self-factor is inverse of vicsek_strength
     //nearest neighbors
     //
     if(fabs(vtx->c)<1e-15) return 0.0;
@@ -235,11 +235,25 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
 			znorm+=vtx->tristar[i]->znorm;
 	}
 	/*normalize*/
-	norml=sqrt(xnorm*xnorm+ynorm*ynorm+znorm*znorm);
-	vixnorm=1*xnorm/norml;
-	viynorm=1*ynorm/norml;
-	viznorm=1*znorm/norml;
+    if (fabs(vesicle->tape->vicsek_strength)<1e-15) {
+        //skip straight to final normalization
+        norml=sqrt(xnorm*xnorm+ynorm*ynorm+znorm*znorm);
+        xnorm/=norml;
+	    ynorm/=norml;
+	    znorm/=norml;
 
+	    /*calculate ddp, Viscek force directed displacement*/
+	    ddp=xnorm*(vtx->x-vtx_old->x)+ynorm*(vtx->y-vtx_old->y)+znorm*(vtx->z-vtx_old->z);
+
+	    return vesicle->tape->F*ddp;	
+    }
+    else {
+	norml=vesicle->tape->vicsek_strength*sqrt(xnorm*xnorm+ynorm*ynorm+znorm*znorm);
+	vixnorm=xnorm/norml;
+	viynorm=ynorm/norml;
+	viznorm=znorm/norml;
+
+    
     //Nearest neighbors normals
     for (j=0;j<vtx->neigh_no;j++){
         if (fabs(vtx->neigh[j]->c)>1e-15){
@@ -256,7 +270,7 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
             viznorm+=znorm/norml;
         }
     }
-
+    
     norml=sqrt(vixnorm*vixnorm+viynorm*viynorm+viznorm*viznorm);
     vixnorm/=norml;
 	viynorm/=norml;
@@ -266,7 +280,8 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
 	ddp=vixnorm*(vtx->x-vtx_old->x)+viynorm*(vtx->y-vtx_old->y)+viznorm*(vtx->z-vtx_old->z);
 	/*calculate dE*/
 //	printf("ddp=%e",ddp);
-	return vesicle->tape->F*ddp;		
+	return vesicle->tape->F*ddp;	
+    }	
 	
 }
 

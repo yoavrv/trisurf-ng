@@ -1212,6 +1212,9 @@ ts_tape *parsetapebuffer(char *buffer){
 /* Variables related to stretching */
 //	CFG_FLOAT("stretchswitch", 0, CFGF_NONE),
 //	CFG_FLOAT("xkA0",0,CFGF_NONE),
+
+/* variables for Vicsek interaction*/
+    CFG_FLOAT("vicsek_strength", 0, CFGF_NONE),
         CFG_END()
     };
     cfg_t *cfg;    
@@ -1221,6 +1224,7 @@ ts_tape *parsetapebuffer(char *buffer){
 	tape->plane_confinement_switch=cfg_getint(cfg,"plane_confinement_switch");
 	tape->plane_d=cfg_getfloat(cfg,"plane_d");
 	tape->plane_F=cfg_getfloat(cfg,"plane_F");
+    tape->vicsek_strength=cfg_getfloat(cfg,"vicsek_strength");
 
     if(retval==CFG_FILE_ERROR){
 	fatal("No tape file.",100);
