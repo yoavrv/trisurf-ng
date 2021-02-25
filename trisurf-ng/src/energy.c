@@ -203,7 +203,7 @@ ts_bool sweep_attraction_bond_energy(ts_vesicle *vesicle){
 
 inline ts_bool attraction_bond_energy(ts_bond *bond, ts_double w){
 
-	if(fabs(bond->vtx1->c)>1e-16 && fabs(bond->vtx2->c)>1e-16){
+	if(fabs(bond->vtx1->c)>1e-16 && (bond->vtx2->c==bond->vtx1->c)){
 		bond->energy=-w;
 	}
 	else {
@@ -218,7 +218,7 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
     //self-factor is inverse of vicsek_strength
     //nearest neighbors
     //
-    if(fabs(vtx->c)<1e-15) return 0.0;
+    if(vtx->c<1e-15) return 0.0;
 //	printf("was here");
 	if(fabs(vesicle->tape->F)<1e-15) return 0.0;
 
@@ -256,7 +256,7 @@ ts_double direct_force_energy(ts_vesicle *vesicle, ts_vertex *vtx, ts_vertex *vt
     
     //Nearest neighbors normals
     for (j=0;j<vtx->neigh_no;j++){
-        if (fabs(vtx->neigh[j]->c)>1e-15){
+        if (vtx->neigh[j]->c>1e-15){
             xnorm=0.0; ynorm=0.0; znorm=0.0;
             for (i=0;i<vtx->neigh[j]->tristar_no;i++){
                 xnorm+=vtx->neigh[j]->tristar[i]->xnorm;
