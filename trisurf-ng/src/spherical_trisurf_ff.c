@@ -77,7 +77,7 @@ for(i=0;i<10000;i++){
     storeUlm2(vesicle);
     saveAvgUlm2(vesicle);
 
-	write_vertex_xml_file(vesicle,i);
+	write_vertex_xml_file(vesicle,i,NULL);
 	fprintf(stderr, "Loop %d completed.\n",i+1);
 }
 write_master_xml_file("test.pvd");

@@ -73,7 +73,7 @@ for(i=0;i<n;i++){
 	vlist->vtx[i]->y=fabs(r)*sin(theta)*sin(fi);
 }
 
-write_vertex_xml_file(vesicle,0);
+write_vertex_xml_file(vesicle,0,NULL);
 write_master_xml_file("test.pvd");
 
 

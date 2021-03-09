@@ -95,7 +95,7 @@ ts_bool write_histogram_data(ts_uint timestep_no, ts_vesicle *vesicle){
 //	write_vertex_xml_file(vesicle,timestep_no,cstlist);
 	cluster_list_free(cstlist);
 	
-	return TS_SUCCESS;
+	return 0;
 }
 
 

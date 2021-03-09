@@ -136,6 +136,8 @@ lockRegion(int fd, int type, int whence, int start, int len)
 }
 
 
+char TS_VERSION[31]="idk stop throwing errors at me";
+
 char *libVersion(){
 	return TS_VERSION;
 }

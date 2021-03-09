@@ -91,7 +91,7 @@ for(i=0;i<nmax;i++){
     storeUlm2(vesicle);
     saveAvgUlm2(vesicle);
 
-	write_vertex_xml_file(vesicle,i);
+	write_vertex_xml_file(vesicle,i,NULL);
 	fprintf(stderr, "Loop %d out of %d completed.\n",i+1,nmax);
 
 }
