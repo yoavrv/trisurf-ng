@@ -4,11 +4,6 @@ CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/proje
  
  cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
  
-src/Makefile.am:3: warning: ':='-style assignments are not portable
- 
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
- 
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
  
 /bin/bash ./config.status --recheck
@@ -70,9 +65,7 @@ gcc3
  
 checking build system type...  
 x86_64-pc-linux-gnu
- 
 checking host system type... x86_64-pc-linux-gnu
- 
 checking how to print strings...  
 printf
  
@@ -87,10 +80,7 @@ checking for egrep...
  
 checking for fgrep...  
 /usr/bin/grep -F
- 
-checking for ld used by gcc...  
-/usr/bin/ld
- 
+checking for ld used by gcc... /usr/bin/ld
 checking if the linker (/usr/bin/ld) is GNU ld...  
 yes
  
@@ -108,8 +98,8 @@ checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu fo
 func_convert_file_noop
 checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
 func_convert_file_noop
-checking for /usr/bin/ld option to reload object files...  
--r
+ 
+checking for /usr/bin/ld option to reload object files... -r
  
 checking for objdump...  
 objdump
@@ -245,8 +235,8 @@ yes
 checking for deflate in -lz...  
 yes
  
-checking for stdlib.h... (cached)  
-yes
+checking for stdlib.h...  
+(cached) yes
  
 checking for string.h...  
 (cached) yes
@@ -299,8 +289,8 @@ config.status: executing libtool commands
 (CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoheader)
 rm -f stamp-h1
 touch config.h.in
-rm -f stamp-h1
  
+rm -f stamp-h1
 cd . && /bin/bash ./config.status config.h
 test -f config.h || rm -f stamp-h1
 test -f config.h || make  stamp-h1
@@ -311,10 +301,6 @@ make[1]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
  
  cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
- 
-src/Makefile.am:3: warning: ':='-style assignments are not portable
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
  
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
  
@@ -408,13 +394,14 @@ checking the name lister (/usr/bin/nm -B) interface...
 BSD nm
  
 checking whether ln -s works... yes
- 
 checking the maximum length of command line arguments...  
 1572864
  
 checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
 func_convert_file_noop
-checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+ 
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
+func_convert_file_noop
  
 checking for /usr/bin/ld option to reload object files...  
 -r
@@ -522,12 +509,12 @@ checking dynamic linker characteristics...
 GNU/Linux ld.so
  
 checking how to hardcode library paths into programs... immediate
+ 
 checking whether stripping libraries is possible...  
 yes
- 
-checking if libtool supports shared libraries... yes
+checking if libtool supports shared libraries...  
+yes
 checking whether to build shared libraries... yes
- 
 checking whether to build static libraries... yes
  
 checking for cfg_parse in -lconfuse...  
@@ -554,8 +541,8 @@ yes
 checking for deflate in -lz...  
 yes
  
-checking for stdlib.h... (cached)  
-yes
+checking for stdlib.h...  
+(cached) yes
  
 checking for string.h... (cached)  
 yes
@@ -565,14 +552,13 @@ inline
  
 checking whether to enable debugging... no
  
-checking for stdlib.h... (cached)  
-yes
+checking for stdlib.h...  
+(cached) yes
  
 checking for GNU libc compatible malloc...  
 yes
  
-checking for stdlib.h... (cached)  
-yes
+checking for stdlib.h... (cached) yes
  
 checking for GNU libc compatible realloc...  
 yes
@@ -643,11 +629,6 @@ CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/proje
  
  cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
  
-src/Makefile.am:3: warning: ':='-style assignments are not portable
- 
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
- 
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
  
 /bin/bash ./config.status --recheck
@@ -677,911 +658,6 @@ gcc
  
 checking whether the C compiler works...  
 yes
- 
-checking for C compiler default output file name... a.out
- 
-checking for suffix of executables...  
-
- 
-checking whether we are cross compiling...  
-no
- 
-checking for suffix of object files...  
-o
- 
-checking whether we are using the GNU C compiler...  
-yes
- 
-checking whether gcc accepts -g...  
-yes
- 
-checking for gcc option to accept ISO C89...  
-none needed
- 
-checking whether gcc understands -c and -o together...  
-yes
- 
-checking whether make supports the include directive...  
-yes (GNU style)
- 
-checking dependency style of gcc...  
-gcc3
- 
-checking build system type...  
-x86_64-pc-linux-gnu
- 
-checking host system type... x86_64-pc-linux-gnu
- 
-checking how to print strings...  
-printf
- 
-checking for a sed that does not truncate output...  
-/usr/bin/sed
- 
-checking for grep that handles long lines and -e...  
-/usr/bin/grep
- 
-checking for egrep...  
-/usr/bin/grep -E
- 
-checking for fgrep...  
-/usr/bin/grep -F
- 
-checking for ld used by gcc...  
-/usr/bin/ld
- 
-checking if the linker (/usr/bin/ld) is GNU ld...  
-yes
- 
-checking for BSD- or MS-compatible name lister (nm)...  
-/usr/bin/nm -B
- 
-checking the name lister (/usr/bin/nm -B) interface...  
-BSD nm
- 
-checking whether ln -s works... yes
-checking the maximum length of command line arguments...  
-1572864
- 
-checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
-func_convert_file_noop
-checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
-func_convert_file_noop
- 
-checking for /usr/bin/ld option to reload object files...  
--r
- 
-checking for objdump...  
-objdump
- 
-checking how to recognize dependent libraries...  
-pass_all
- 
-checking for dlltool...  
-no
- 
-checking how to associate runtime and link libraries... printf %s\n
- 
-checking for ar...  
-ar
- 
-checking for archiver @FILE support...  
-@
- 
-checking for strip...  
-strip
- 
-checking for ranlib...  
-ranlib
- 
-checking command to parse /usr/bin/nm -B output from gcc object...  
-ok
- 
-checking for sysroot...  
-no
-checking for a working dd...  
-/usr/bin/dd
- 
-checking how to truncate binary pipes...  
-/usr/bin/dd bs=4096 count=1
- 
-checking for mt...  
-mt
- 
-checking if mt is a manifest tool...  
-no
- 
-checking how to run the C preprocessor...  
-gcc -E
- 
-checking for ANSI C header files...  
-yes
- 
-checking for sys/types.h...  
-yes
- 
-checking for sys/stat.h...  
-yes
- 
-checking for stdlib.h...  
-yes
- 
-checking for string.h...  
-yes
- 
-checking for memory.h...  
-yes
- 
-checking for strings.h...  
-yes
- 
-checking for inttypes.h...  
-yes
- 
-checking for stdint.h...  
-yes
- 
-checking for unistd.h...  
-yes
- 
-checking for dlfcn.h...  
-yes
- 
-checking for objdir...  
-.libs
- 
-checking if gcc supports -fno-rtti -fno-exceptions...  
-no
- 
-checking for gcc option to produce PIC... -fPIC -DPIC
-checking if gcc PIC flag -fPIC -DPIC works...  
-yes
- 
-checking if gcc static flag -static works...  
-yes
- 
-checking if gcc supports -c -o file.o...  
-yes
- 
-checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
-yes
- 
-checking whether -lc should be explicitly linked in...  
-no
-checking dynamic linker characteristics...  
-GNU/Linux ld.so
- 
-checking how to hardcode library paths into programs... immediate
-checking whether stripping libraries is possible...  
-yes
- 
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... yes
- 
-checking whether to build static libraries... yes
- 
-checking for cfg_parse in -lconfuse...  
-yes
- 
-checking for pow in -lm...  
-yes
- 
-checking for cblas_dgemm in -lgslcblas...  
-yes
- 
-checking for gsl_blas_dgemm in -lgsl...  
-yes
- 
-checking for pkg-config...  
-/usr/bin/pkg-config
- 
-checking pkg-config is at least version 0.9.0...  
-yes
- 
-checking for libxml2...  
-yes
- 
-checking for deflate in -lz...  
-yes
- 
-checking for stdlib.h...  
-(cached) yes
- 
-checking for string.h...  
-(cached) yes
- 
-checking for inline...  
-inline
- 
-checking whether to enable debugging... no
- 
-checking for stdlib.h...  
-(cached) yes
- 
-checking for GNU libc compatible malloc...  
-yes
- 
-checking for stdlib.h... (cached)  
-yes
- 
-checking for GNU libc compatible realloc...  
-yes
- 
-checking for pow...  
-yes
- 
-checking for sqrt...  
-yes
- 
-checking for strndup...  
-yes
- 
-checking that generated files are newer than configure...  
-done
- 
-configure: creating ./config.status
- 
- /bin/bash ./config.status
- 
-config.status: creating Makefile
- 
-config.status: creating src/Makefile
- 
-config.status: creating config.h
- 
-config.status: config.h is unchanged
- 
-config.status: executing depfiles commands
- 
-config.status: executing libtool commands
- 
-make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
- 
-make[3]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
-CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
- 
- cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
- 
-src/Makefile.am:3: warning: ':='-style assignments are not portable
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
- 
-CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
- 
-/bin/bash ./config.status --recheck
- 
-running CONFIG_SHELL=/bin/bash /bin/bash ./configure --no-create --no-recursion
- 
-checking for a BSD-compatible install...  
-/usr/bin/install -c
- 
-checking whether build environment is sane...  
-yes
- 
-checking for a thread-safe mkdir -p...  
-/usr/bin/mkdir -p
- 
-checking for gawk...  
-gawk
- 
-checking whether make sets $(MAKE)...  
-yes
- 
-checking whether make supports nested variables...  
-yes
- 
-checking for gcc...  
-gcc
- 
-checking whether the C compiler works...  
-yes
- 
-checking for C compiler default output file name... a.out
- 
-checking for suffix of executables...  
-
- 
-checking whether we are cross compiling...  
-no
- 
-checking for suffix of object files...  
-o
- 
-checking whether we are using the GNU C compiler...  
-yes
- 
-checking whether gcc accepts -g...  
-yes
- 
-checking for gcc option to accept ISO C89...  
-none needed
- 
-checking whether gcc understands -c and -o together...  
-yes
- 
-checking whether make supports the include directive...  
-yes (GNU style)
- 
-checking dependency style of gcc...  
-gcc3
- 
-checking build system type...  
-x86_64-pc-linux-gnu
- 
-checking host system type... x86_64-pc-linux-gnu
- 
-checking how to print strings...  
-printf
- 
-checking for a sed that does not truncate output...  
-/usr/bin/sed
- 
-checking for grep that handles long lines and -e...  
-/usr/bin/grep
- 
-checking for egrep...  
-/usr/bin/grep -E
- 
-checking for fgrep...  
-/usr/bin/grep -F
- 
-checking for ld used by gcc...  
-/usr/bin/ld
- 
-checking if the linker (/usr/bin/ld) is GNU ld...  
-yes
- 
-checking for BSD- or MS-compatible name lister (nm)...  
-/usr/bin/nm -B
- 
-checking the name lister (/usr/bin/nm -B) interface...  
-BSD nm
- 
-checking whether ln -s works... yes
-checking the maximum length of command line arguments...  
-1572864
- 
-checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
-func_convert_file_noop
-checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
-func_convert_file_noop
- 
-checking for /usr/bin/ld option to reload object files...  
--r
- 
-checking for objdump...  
-objdump
- 
-checking how to recognize dependent libraries...  
-pass_all
- 
-checking for dlltool...  
-no
- 
-checking how to associate runtime and link libraries... printf %s\n
- 
-checking for ar...  
-ar
- 
-checking for archiver @FILE support...  
-@
- 
-checking for strip...  
-strip
- 
-checking for ranlib...  
-ranlib
- 
-checking command to parse /usr/bin/nm -B output from gcc object...  
-ok
- 
-checking for sysroot...  
-no
-checking for a working dd...  
-/usr/bin/dd
- 
-checking how to truncate binary pipes...  
-/usr/bin/dd bs=4096 count=1
- 
-checking for mt...  
-mt
- 
-checking if mt is a manifest tool...  
-no
- 
-checking how to run the C preprocessor...  
-gcc -E
- 
-checking for ANSI C header files...  
-yes
- 
-checking for sys/types.h...  
-yes
- 
-checking for sys/stat.h...  
-yes
- 
-checking for stdlib.h...  
-yes
- 
-checking for string.h...  
-yes
- 
-checking for memory.h...  
-yes
- 
-checking for strings.h...  
-yes
- 
-checking for inttypes.h...  
-yes
- 
-checking for stdint.h...  
-yes
- 
-checking for unistd.h...  
-yes
- 
-checking for dlfcn.h...  
-yes
- 
-checking for objdir...  
-.libs
- 
-checking if gcc supports -fno-rtti -fno-exceptions...  
-no
- 
-checking for gcc option to produce PIC...  
--fPIC -DPIC
-checking if gcc PIC flag -fPIC -DPIC works...  
-yes
- 
-checking if gcc static flag -static works...  
-yes
- 
-checking if gcc supports -c -o file.o...  
-yes
- 
-checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
-yes
- 
-checking whether -lc should be explicitly linked in...  
-no
- 
-checking dynamic linker characteristics...  
-GNU/Linux ld.so
- 
-checking how to hardcode library paths into programs... immediate
- 
-checking whether stripping libraries is possible...  
-yes
- 
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... yes
- 
-checking whether to build static libraries...  
-yes
- 
-checking for cfg_parse in -lconfuse...  
-yes
- 
-checking for pow in -lm...  
-yes
- 
-checking for cblas_dgemm in -lgslcblas...  
-yes
- 
-checking for gsl_blas_dgemm in -lgsl...  
-yes
- 
-checking for pkg-config...  
-/usr/bin/pkg-config
- 
-checking pkg-config is at least version 0.9.0...  
-yes
- 
-checking for libxml2...  
-yes
- 
-checking for deflate in -lz...  
-yes
- 
-checking for stdlib.h...  
-(cached) yes
- 
-checking for string.h... (cached)  
-yes
- 
-checking for inline...  
-inline
- 
-checking whether to enable debugging... no
- 
-checking for stdlib.h...  
-(cached) yes
- 
-checking for GNU libc compatible malloc...  
-yes
- 
-checking for stdlib.h...  
-(cached) yes
- 
-checking for GNU libc compatible realloc...  
-yes
- 
-checking for pow...  
-yes
- 
-checking for sqrt...  
-yes
- 
-checking for strndup...  
-yes
- 
-checking that generated files are newer than configure...  
-done
- 
-configure: creating ./config.status
- 
- /bin/bash ./config.status
- 
-config.status: creating Makefile
- 
-config.status: creating src/Makefile
- 
-config.status: creating config.h
- 
-config.status: config.h is unchanged
- 
-config.status: executing depfiles commands
- 
-config.status: executing libtool commands
- 
-make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
- 
-cd .. && make  am--refresh
- 
-make[3]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
-CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
- 
- cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
- 
-src/Makefile.am:3: warning: ':='-style assignments are not portable
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
- 
-CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
- 
-/bin/bash ./config.status --recheck
- 
-running CONFIG_SHELL=/bin/bash /bin/bash ./configure --no-create --no-recursion
- 
-checking for a BSD-compatible install...  
-/usr/bin/install -c
- 
-checking whether build environment is sane...  
-yes
- 
-checking for a thread-safe mkdir -p...  
-/usr/bin/mkdir -p
- 
-checking for gawk...  
-gawk
- 
-checking whether make sets $(MAKE)...  
-yes
- 
-checking whether make supports nested variables...  
-yes
- 
-checking for gcc...  
-gcc
- 
-checking whether the C compiler works...  
-yes
- 
-checking for C compiler default output file name... a.out
- 
-checking for suffix of executables...  
-
- 
-checking whether we are cross compiling...  
-no
- 
-checking for suffix of object files...  
-o
- 
-checking whether we are using the GNU C compiler...  
-yes
- 
-checking whether gcc accepts -g...  
-yes
- 
-checking for gcc option to accept ISO C89...  
-none needed
- 
-checking whether gcc understands -c and -o together...  
-yes
- 
-checking whether make supports the include directive...  
-yes (GNU style)
- 
-checking dependency style of gcc...  
-gcc3
- 
-checking build system type...  
-x86_64-pc-linux-gnu
- 
-checking host system type... x86_64-pc-linux-gnu
- 
-checking how to print strings...  
-printf
-checking for a sed that does not truncate output...  
-/usr/bin/sed
- 
-checking for grep that handles long lines and -e...  
-/usr/bin/grep
- 
-checking for egrep...  
-/usr/bin/grep -E
- 
-checking for fgrep...  
-/usr/bin/grep -F
- 
-checking for ld used by gcc...  
-/usr/bin/ld
- 
-checking if the linker (/usr/bin/ld) is GNU ld...  
-yes
- 
-checking for BSD- or MS-compatible name lister (nm)...  
-/usr/bin/nm -B
- 
-checking the name lister (/usr/bin/nm -B) interface...  
-BSD nm
- 
-checking whether ln -s works... yes
-checking the maximum length of command line arguments...  
-1572864
- 
-checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
-func_convert_file_noop
-checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
-func_convert_file_noop
- 
-checking for /usr/bin/ld option to reload object files... -r
- 
-checking for objdump...  
-objdump
- 
-checking how to recognize dependent libraries...  
-pass_all
- 
-checking for dlltool...  
-no
- 
-checking how to associate runtime and link libraries... printf %s\n
- 
-checking for ar...  
-ar
- 
-checking for archiver @FILE support...  
-@
- 
-checking for strip...  
-strip
- 
-checking for ranlib...  
-ranlib
- 
-checking command to parse /usr/bin/nm -B output from gcc object...  
-ok
- 
-checking for sysroot...  
-no
- 
-checking for a working dd...  
-/usr/bin/dd
- 
-checking how to truncate binary pipes...  
-/usr/bin/dd bs=4096 count=1
- 
-checking for mt...  
-mt
- 
-checking if mt is a manifest tool...  
-no
- 
-checking how to run the C preprocessor...  
-gcc -E
- 
-checking for ANSI C header files...  
-yes
- 
-checking for sys/types.h...  
-yes
- 
-checking for sys/stat.h...  
-yes
- 
-checking for stdlib.h...  
-yes
- 
-checking for string.h...  
-yes
- 
-checking for memory.h...  
-yes
- 
-checking for strings.h...  
-yes
- 
-checking for inttypes.h...  
-yes
- 
-checking for stdint.h...  
-yes
- 
-checking for unistd.h...  
-yes
- 
-checking for dlfcn.h...  
-yes
- 
-checking for objdir...  
-.libs
- 
-checking if gcc supports -fno-rtti -fno-exceptions...  
-no
- 
-checking for gcc option to produce PIC... -fPIC -DPIC
-checking if gcc PIC flag -fPIC -DPIC works...  
-yes
- 
-checking if gcc static flag -static works...  
-yes
-checking if gcc supports -c -o file.o...  
-yes
- 
-checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
-yes
- 
-checking whether -lc should be explicitly linked in...  
-no
- 
-checking dynamic linker characteristics...  
-GNU/Linux ld.so
- 
-checking how to hardcode library paths into programs... immediate
- 
-checking whether stripping libraries is possible...  
-yes
- 
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... yes
- 
-checking whether to build static libraries... yes
- 
-checking for cfg_parse in -lconfuse...  
-yes
- 
-checking for pow in -lm...  
-yes
- 
-checking for cblas_dgemm in -lgslcblas...  
-yes
- 
-checking for gsl_blas_dgemm in -lgsl...  
-yes
- 
-checking for pkg-config...  
-/usr/bin/pkg-config
- 
-checking pkg-config is at least version 0.9.0...  
-yes
- 
-checking for libxml2...  
-yes
- 
-checking for deflate in -lz...  
-yes
- 
-checking for stdlib.h...  
-(cached) yes
- 
-checking for string.h... (cached)  
-yes
- 
-checking for inline...  
-inline
- 
-checking whether to enable debugging... no
- 
-checking for stdlib.h... (cached) yes
- 
-checking for GNU libc compatible malloc...  
-yes
- 
-checking for stdlib.h... (cached)  
-yes
- 
-checking for GNU libc compatible realloc...  
-yes
- 
-checking for pow...  
-yes
- 
-checking for sqrt...  
-yes
- 
-checking for strndup...  
-yes
- 
-checking that generated files are newer than configure...  
-done
- 
-configure: creating ./config.status
- 
- /bin/bash ./config.status
- 
-config.status: creating Makefile
- 
-config.status: creating src/Makefile
- 
-config.status: creating config.h
- 
-config.status: config.h is unchanged
- 
-config.status: executing depfiles commands
- 
-config.status: executing libtool commands
- 
-make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
- 
-cd .. && make  am--refresh
- 
-make[3]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
-CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
- 
- cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
- 
-src/Makefile.am:3: warning: ':='-style assignments are not portable
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
- 
-CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
- 
-/bin/bash ./config.status --recheck
- 
-running CONFIG_SHELL=/bin/bash /bin/bash ./configure --no-create --no-recursion
- 
-checking for a BSD-compatible install...  
-/usr/bin/install -c
- 
-checking whether build environment is sane...  
-yes
- 
-checking for a thread-safe mkdir -p...  
-/usr/bin/mkdir -p
- 
-checking for gawk...  
-gawk
- 
-checking whether make sets $(MAKE)...  
-yes
- 
-checking whether make supports nested variables...  
-yes
- 
-checking for gcc...  
-gcc
- 
-checking whether the C compiler works...  
-yes
- 
 checking for C compiler default output file name... a.out
  
 checking for suffix of executables...  
@@ -1645,18 +721,15 @@ checking the name lister (/usr/bin/nm -B) interface...
 BSD nm
  
 checking whether ln -s works... yes
- 
 checking the maximum length of command line arguments...  
 1572864
  
 checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
 func_convert_file_noop
- 
 checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
 func_convert_file_noop
  
-checking for /usr/bin/ld option to reload object files...  
--r
+checking for /usr/bin/ld option to reload object files... -r
  
 checking for objdump...  
 objdump
@@ -1667,7 +740,8 @@ pass_all
 checking for dlltool...  
 no
  
-checking how to associate runtime and link libraries... printf %s\n
+checking how to associate runtime and link libraries...  
+printf %s\n
  
 checking for ar...  
 ar
@@ -1741,7 +815,6 @@ checking if gcc supports -fno-rtti -fno-exceptions...
 no
  
 checking for gcc option to produce PIC... -fPIC -DPIC
- 
 checking if gcc PIC flag -fPIC -DPIC works...  
 yes
  
@@ -1750,8 +823,8 @@ yes
  
 checking if gcc supports -c -o file.o...  
 yes
- 
-checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o...  
+(cached) yes
 checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
 yes
  
@@ -1793,20 +866,306 @@ yes
  
 checking for deflate in -lz...  
 yes
+checking for stdlib.h... (cached) yes
  
-checking for stdlib.h... (cached)  
-yes
- 
-checking for string.h... (cached)  
-yes
+checking for string.h... (cached) yes
  
 checking for inline...  
 inline
  
 checking whether to enable debugging... no
  
-checking for stdlib.h... (cached) yes
+checking for stdlib.h...  
+(cached) yes
  
+checking for GNU libc compatible malloc...  
+yes
+ 
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc...  
+yes
+ 
+checking for pow...  
+yes
+ 
+checking for sqrt...  
+yes
+ 
+checking for strndup...  
+yes
+ 
+checking that generated files are newer than configure...  
+done
+ 
+configure: creating ./config.status
+ 
+ /bin/bash ./config.status
+ 
+config.status: creating Makefile
+ 
+config.status: creating src/Makefile
+ 
+config.status: creating config.h
+ 
+config.status: config.h is unchanged
+ 
+config.status: executing depfiles commands
+ 
+config.status: executing libtool commands
+ 
+make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
+ 
+make[3]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
+ 
+ cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
+ 
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
+ 
+/bin/bash ./config.status --recheck
+ 
+running CONFIG_SHELL=/bin/bash /bin/bash ./configure --no-create --no-recursion
+ 
+checking for a BSD-compatible install...  
+/usr/bin/install -c
+ 
+checking whether build environment is sane...  
+yes
+ 
+checking for a thread-safe mkdir -p...  
+/usr/bin/mkdir -p
+ 
+checking for gawk...  
+gawk
+ 
+checking whether make sets $(MAKE)...  
+yes
+ 
+checking whether make supports nested variables...  
+yes
+ 
+checking for gcc...  
+gcc
+ 
+checking whether the C compiler works...  
+yes
+ 
+checking for C compiler default output file name... a.out
+ 
+checking for suffix of executables...  
+
+ 
+checking whether we are cross compiling...  
+no
+ 
+checking for suffix of object files...  
+o
+ 
+checking whether we are using the GNU C compiler...  
+yes
+ 
+checking whether gcc accepts -g...  
+yes
+ 
+checking for gcc option to accept ISO C89...  
+none needed
+ 
+checking whether gcc understands -c and -o together...  
+yes
+ 
+checking whether make supports the include directive...  
+yes (GNU style)
+ 
+checking dependency style of gcc...  
+gcc3
+ 
+checking build system type...  
+x86_64-pc-linux-gnu
+ 
+checking host system type... x86_64-pc-linux-gnu
+ 
+checking how to print strings...  
+printf
+ 
+checking for a sed that does not truncate output...  
+/usr/bin/sed
+ 
+checking for grep that handles long lines and -e...  
+/usr/bin/grep
+ 
+checking for egrep...  
+/usr/bin/grep -E
+checking for fgrep...  
+/usr/bin/grep -F
+ 
+checking for ld used by gcc...  
+/usr/bin/ld
+ 
+checking if the linker (/usr/bin/ld) is GNU ld...  
+yes
+ 
+checking for BSD- or MS-compatible name lister (nm)...  
+/usr/bin/nm -B
+ 
+checking the name lister (/usr/bin/nm -B) interface...  
+BSD nm
+ 
+checking whether ln -s works... yes
+checking the maximum length of command line arguments...  
+1572864
+ 
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
+func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
+func_convert_file_noop
+ 
+checking for /usr/bin/ld option to reload object files... -r
+ 
+checking for objdump...  
+objdump
+ 
+checking how to recognize dependent libraries...  
+pass_all
+ 
+checking for dlltool...  
+no
+ 
+checking how to associate runtime and link libraries... printf %s\n
+ 
+checking for ar...  
+ar
+ 
+checking for archiver @FILE support...  
+@
+ 
+checking for strip...  
+strip
+ 
+checking for ranlib...  
+ranlib
+ 
+checking command to parse /usr/bin/nm -B output from gcc object...  
+ok
+ 
+checking for sysroot...  
+no
+checking for a working dd...  
+/usr/bin/dd
+checking how to truncate binary pipes...  
+/usr/bin/dd bs=4096 count=1
+ 
+checking for mt...  
+mt
+ 
+checking if mt is a manifest tool...  
+no
+ 
+checking how to run the C preprocessor...  
+gcc -E
+ 
+checking for ANSI C header files...  
+yes
+ 
+checking for sys/types.h...  
+yes
+ 
+checking for sys/stat.h...  
+yes
+ 
+checking for stdlib.h...  
+yes
+ 
+checking for string.h...  
+yes
+ 
+checking for memory.h...  
+yes
+ 
+checking for strings.h...  
+yes
+ 
+checking for inttypes.h...  
+yes
+ 
+checking for stdint.h...  
+yes
+ 
+checking for unistd.h...  
+yes
+ 
+checking for dlfcn.h...  
+yes
+ 
+checking for objdir...  
+.libs
+ 
+checking if gcc supports -fno-rtti -fno-exceptions...  
+no
+ 
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works...  
+yes
+ 
+checking if gcc static flag -static works...  
+yes
+checking if gcc supports -c -o file.o...  
+yes
+ 
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
+yes
+ 
+checking whether -lc should be explicitly linked in...  
+no
+ 
+checking dynamic linker characteristics...  
+GNU/Linux ld.so
+ 
+checking how to hardcode library paths into programs... immediate
+ 
+checking whether stripping libraries is possible...  
+yes
+ 
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+ 
+checking whether to build static libraries...  
+yes
+ 
+checking for cfg_parse in -lconfuse...  
+yes
+ 
+checking for pow in -lm...  
+yes
+ 
+checking for cblas_dgemm in -lgslcblas...  
+yes
+ 
+checking for gsl_blas_dgemm in -lgsl...  
+yes
+ 
+checking for pkg-config...  
+/usr/bin/pkg-config
+ 
+checking pkg-config is at least version 0.9.0...  
+yes
+ 
+checking for libxml2...  
+yes
+ 
+checking for deflate in -lz...  
+yes
+ 
+checking for stdlib.h... (cached)  
+yes
+ 
+checking for string.h...  
+(cached) yes
+ 
+checking for inline...  
+inline
+checking whether to enable debugging... no
+checking for stdlib.h... (cached) yes
 checking for GNU libc compatible malloc...  
 yes
  
@@ -1846,15 +1205,12 @@ config.status: executing libtool commands
  
 make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
  
+cd .. && make  am--refresh
+ 
 make[3]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
  
  cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
- 
-src/Makefile.am:3: warning: ':='-style assignments are not portable
- 
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
  
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
  
@@ -1953,9 +1309,300 @@ checking the maximum length of command line arguments...
  
 checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
 func_convert_file_noop
- 
 checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
 func_convert_file_noop
+checking for /usr/bin/ld option to reload object files...  
+-r
+ 
+checking for objdump...  
+objdump
+ 
+checking how to recognize dependent libraries...  
+pass_all
+ 
+checking for dlltool...  
+no
+ 
+checking how to associate runtime and link libraries... printf %s\n
+ 
+checking for ar...  
+ar
+ 
+checking for archiver @FILE support...  
+@
+ 
+checking for strip...  
+strip
+ 
+checking for ranlib...  
+ranlib
+ 
+checking command to parse /usr/bin/nm -B output from gcc object...  
+ok
+ 
+checking for sysroot...  
+no
+checking for a working dd...  
+/usr/bin/dd
+ 
+checking how to truncate binary pipes...  
+/usr/bin/dd bs=4096 count=1
+ 
+checking for mt...  
+mt
+ 
+checking if mt is a manifest tool...  
+no
+ 
+checking how to run the C preprocessor...  
+gcc -E
+ 
+checking for ANSI C header files...  
+yes
+ 
+checking for sys/types.h...  
+yes
+ 
+checking for sys/stat.h...  
+yes
+ 
+checking for stdlib.h...  
+yes
+ 
+checking for string.h...  
+yes
+ 
+checking for memory.h...  
+yes
+ 
+checking for strings.h...  
+yes
+ 
+checking for inttypes.h...  
+yes
+ 
+checking for stdint.h...  
+yes
+ 
+checking for unistd.h...  
+yes
+ 
+checking for dlfcn.h...  
+yes
+ 
+checking for objdir...  
+.libs
+ 
+checking if gcc supports -fno-rtti -fno-exceptions...  
+no
+ 
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works...  
+yes
+ 
+checking if gcc static flag -static works...  
+yes
+ 
+checking if gcc supports -c -o file.o...  
+yes
+ 
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
+yes
+ 
+checking whether -lc should be explicitly linked in...  
+no
+checking dynamic linker characteristics...  
+GNU/Linux ld.so
+ 
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible...  
+yes
+checking if libtool supports shared libraries...  
+yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries...  
+yes
+ 
+checking for cfg_parse in -lconfuse...  
+yes
+ 
+checking for pow in -lm...  
+yes
+ 
+checking for cblas_dgemm in -lgslcblas...  
+yes
+ 
+checking for gsl_blas_dgemm in -lgsl...  
+yes
+ 
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0...  
+yes
+ 
+checking for libxml2...  
+yes
+ 
+checking for deflate in -lz...  
+yes
+ 
+checking for stdlib.h...  
+(cached) yes
+ 
+checking for string.h... (cached)  
+yes
+ 
+checking for inline...  
+inline
+ 
+checking whether to enable debugging... no
+ 
+checking for stdlib.h... (cached) yes
+ 
+checking for GNU libc compatible malloc...  
+yes
+ 
+checking for stdlib.h... (cached) yes
+ 
+checking for GNU libc compatible realloc...  
+yes
+ 
+checking for pow...  
+yes
+ 
+checking for sqrt...  
+yes
+ 
+checking for strndup...  
+yes
+ 
+checking that generated files are newer than configure...  
+done
+ 
+configure: creating ./config.status
+ 
+ /bin/bash ./config.status
+ 
+config.status: creating Makefile
+ 
+config.status: creating src/Makefile
+ 
+config.status: creating config.h
+ 
+config.status: config.h is unchanged
+ 
+config.status: executing depfiles commands
+ 
+config.status: executing libtool commands
+ 
+make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
+ 
+cd .. && make  am--refresh
+ 
+make[3]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
+ 
+ cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
+ 
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
+ 
+/bin/bash ./config.status --recheck
+ 
+running CONFIG_SHELL=/bin/bash /bin/bash ./configure --no-create --no-recursion
+ 
+checking for a BSD-compatible install...  
+/usr/bin/install -c
+ 
+checking whether build environment is sane...  
+yes
+ 
+checking for a thread-safe mkdir -p...  
+/usr/bin/mkdir -p
+ 
+checking for gawk...  
+gawk
+ 
+checking whether make sets $(MAKE)...  
+yes
+ 
+checking whether make supports nested variables...  
+yes
+ 
+checking for gcc...  
+gcc
+ 
+checking whether the C compiler works...  
+yes
+ 
+checking for C compiler default output file name... a.out
+ 
+checking for suffix of executables...  
+
+ 
+checking whether we are cross compiling...  
+no
+ 
+checking for suffix of object files...  
+o
+ 
+checking whether we are using the GNU C compiler...  
+yes
+ 
+checking whether gcc accepts -g...  
+yes
+ 
+checking for gcc option to accept ISO C89...  
+none needed
+ 
+checking whether gcc understands -c and -o together...  
+yes
+ 
+checking whether make supports the include directive...  
+yes (GNU style)
+ 
+checking dependency style of gcc...  
+gcc3
+ 
+checking build system type...  
+x86_64-pc-linux-gnu
+ 
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings...  
+printf
+ 
+checking for a sed that does not truncate output...  
+/usr/bin/sed
+ 
+checking for grep that handles long lines and -e...  
+/usr/bin/grep
+ 
+checking for egrep...  
+/usr/bin/grep -E
+ 
+checking for fgrep...  
+/usr/bin/grep -F
+ 
+checking for ld used by gcc...  
+/usr/bin/ld
+ 
+checking if the linker (/usr/bin/ld) is GNU ld...  
+yes
+ 
+checking for BSD- or MS-compatible name lister (nm)...  
+/usr/bin/nm -B
+ 
+checking the name lister (/usr/bin/nm -B) interface...  
+BSD nm
+ 
+checking whether ln -s works... yes
+checking the maximum length of command line arguments...  
+1572864
+ 
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
+func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
+func_convert_file_noop
+ 
 checking for /usr/bin/ld option to reload object files... -r
  
 checking for objdump...  
@@ -2041,6 +1688,7 @@ checking if gcc supports -fno-rtti -fno-exceptions...
 no
  
 checking for gcc option to produce PIC... -fPIC -DPIC
+ 
 checking if gcc PIC flag -fPIC -DPIC works...  
 yes
  
@@ -2052,6 +1700,7 @@ yes
 checking if gcc supports -c -o file.o... (cached) yes
 checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
 yes
+ 
 checking whether -lc should be explicitly linked in...  
 no
  
@@ -2061,11 +1710,11 @@ GNU/Linux ld.so
 checking how to hardcode library paths into programs... immediate
 checking whether stripping libraries is possible...  
 yes
-checking if libtool supports shared libraries...  
-yes
+ 
+checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... yes
-checking whether to build static libraries...  
-yes
+ 
+checking whether to build static libraries... yes
  
 checking for cfg_parse in -lconfuse...  
 yes
@@ -2094,22 +1743,22 @@ yes
 checking for stdlib.h...  
 (cached) yes
  
-checking for string.h...  
-(cached) yes
+checking for string.h... (cached)  
+yes
  
 checking for inline...  
 inline
  
 checking whether to enable debugging... no
  
-checking for stdlib.h...  
-(cached) yes
+checking for stdlib.h... (cached)  
+yes
  
 checking for GNU libc compatible malloc...  
 yes
  
-checking for stdlib.h...  
-(cached) yes
+checking for stdlib.h... (cached)  
+yes
  
 checking for GNU libc compatible realloc...  
 yes
@@ -2144,82 +1793,10 @@ config.status: executing libtool commands
  
 make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
  
-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
-mv -f .deps/main.Tpo .deps/main.Po
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT general.lo -MD -MP -MF .deps/general.Tpo -c -o general.lo general.c
-mv -f .deps/general.Tpo .deps/general.Plo
- 
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT vertex.lo -MD -MP -MF .deps/vertex.Tpo -c -o vertex.lo vertex.c
-mv -f .deps/vertex.Tpo .deps/vertex.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT bond.lo -MD -MP -MF .deps/bond.Tpo -c -o bond.lo bond.c
-mv -f .deps/bond.Tpo .deps/bond.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT triangle.lo -MD -MP -MF .deps/triangle.Tpo -c -o triangle.lo triangle.c
-mv -f .deps/triangle.Tpo .deps/triangle.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT cell.lo -MD -MP -MF .deps/cell.Tpo -c -o cell.lo cell.c
-mv -f .deps/cell.Tpo .deps/cell.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT vesicle.lo -MD -MP -MF .deps/vesicle.Tpo -c -o vesicle.lo vesicle.c
-mv -f .deps/vesicle.Tpo .deps/vesicle.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT initial_distribution.lo -MD -MP -MF .deps/initial_distribution.Tpo -c -o initial_distribution.lo initial_distribution.c
-mv -f .deps/initial_distribution.Tpo .deps/initial_distribution.Plo
- 
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT io.lo -MD -MP -MF .deps/io.Tpo -c -o io.lo io.c
-mv -f .deps/io.Tpo .deps/io.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT dumpstate.lo -MD -MP -MF .deps/dumpstate.Tpo -c -o dumpstate.lo dumpstate.c
-mv -f .deps/dumpstate.Tpo .deps/dumpstate.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT frame.lo -MD -MP -MF .deps/frame.Tpo -c -o frame.lo frame.c
-mv -f .deps/frame.Tpo .deps/frame.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT energy.lo -MD -MP -MF .deps/energy.Tpo -c -o energy.lo energy.c
-mv -f .deps/energy.Tpo .deps/energy.Plo
- 
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT timestep.lo -MD -MP -MF .deps/timestep.Tpo -c -o timestep.lo timestep.c
-mv -f .deps/timestep.Tpo .deps/timestep.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT vertexmove.lo -MD -MP -MF .deps/vertexmove.Tpo -c -o vertexmove.lo vertexmove.c
-mv -f .deps/vertexmove.Tpo .deps/vertexmove.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT bondflip.lo -MD -MP -MF .deps/bondflip.Tpo -c -o bondflip.lo bondflip.c
- 
-mv -f .deps/bondflip.Tpo .deps/bondflip.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT poly.lo -MD -MP -MF .deps/poly.Tpo -c -o poly.lo poly.c
-mv -f .deps/poly.Tpo .deps/poly.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT stats.lo -MD -MP -MF .deps/stats.Tpo -c -o stats.lo stats.c
-mv -f .deps/stats.Tpo .deps/stats.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT sh.lo -MD -MP -MF .deps/sh.Tpo -c -o sh.lo sh.c
-mv -f .deps/sh.Tpo .deps/sh.Plo
- 
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT shcomplex.lo -MD -MP -MF .deps/shcomplex.Tpo -c -o shcomplex.lo shcomplex.c
-mv -f .deps/shcomplex.Tpo .deps/shcomplex.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT constvol.lo -MD -MP -MF .deps/constvol.Tpo -c -o constvol.lo constvol.c
-mv -f .deps/constvol.Tpo .deps/constvol.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT snapshot.lo -MD -MP -MF .deps/snapshot.Tpo -c -o snapshot.lo snapshot.c
-mv -f .deps/snapshot.Tpo .deps/snapshot.Plo
- 
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT restore.lo -MD -MP -MF .deps/restore.Tpo -c -o restore.lo restore.c
-mv -f .deps/restore.Tpo .deps/restore.Plo
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT cluster.lo -MD -MP -MF .deps/cluster.Tpo -c -o cluster.lo cluster.c
-mv -f .deps/cluster.Tpo .deps/cluster.Plo
-/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o libtrisurf.la -rpath /usr/local/lib general.lo vertex.lo bond.lo triangle.lo cell.lo vesicle.lo initial_distribution.lo io.lo dumpstate.lo frame.lo energy.lo timestep.lo vertexmove.lo bondflip.lo poly.lo stats.lo sh.lo shcomplex.lo constvol.lo snapshot.lo restore.lo cluster.lo -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
- 
-rm -f trisurf
-/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o trisurf main.o libtrisurf.la  -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT tsmeasure.o -MD -MP -MF .deps/tsmeasure.Tpo -c -o tsmeasure.o tsmeasure.c
-mv -f .deps/tsmeasure.Tpo .deps/tsmeasure.Po
-rm -f tsmeasure
-/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o tsmeasure tsmeasure.o libtrisurf.la  -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
- 
-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT tspoststat.o -MD -MP -MF .deps/tspoststat.Tpo -c -o tspoststat.o tspoststat.c
-mv -f .deps/tspoststat.Tpo .deps/tspoststat.Po
-rm -f tspoststat
-/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -DTS_VERSION=\"6d5870c-dirty\" -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o tspoststat tspoststat.o libtrisurf.la  -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
- 
-make[2]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng/src'
- 
-make[2]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
+make[3]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
  
  cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
- 
-src/Makefile.am:3: warning: ':='-style assignments are not portable
-src/Makefile.am:3: warning: shell git --no-pager describe --tags --always --dirty: non-POSIX variable name
-src/Makefile.am:3: (probably a GNU make extension)
  
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
  
@@ -2318,17 +1895,15 @@ checking the maximum length of command line arguments...
  
 checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
 func_convert_file_noop
- 
 checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
 func_convert_file_noop
+ 
 checking for /usr/bin/ld option to reload object files...  
 -r
  
 checking for objdump...  
 objdump
- 
-checking how to recognize dependent libraries...  
-pass_all
+checking how to recognize dependent libraries... pass_all
  
 checking for dlltool...  
 no
@@ -2352,6 +1927,7 @@ ok
  
 checking for sysroot...  
 no
+ 
 checking for a working dd...  
 /usr/bin/dd
  
@@ -2390,6 +1966,7 @@ yes
  
 checking for inttypes.h...  
 yes
+ 
 checking for stdint.h...  
 yes
  
@@ -2414,10 +1991,10 @@ yes
  
 checking if gcc supports -c -o file.o...  
 yes
- 
 checking if gcc supports -c -o file.o... (cached) yes
 checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
 yes
+ 
 checking whether -lc should be explicitly linked in...  
 no
  
@@ -2425,10 +2002,11 @@ checking dynamic linker characteristics...
 GNU/Linux ld.so
  
 checking how to hardcode library paths into programs... immediate
+ 
 checking whether stripping libraries is possible...  
 yes
-checking if libtool supports shared libraries...  
-yes
+ 
+checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... yes
 checking whether to build static libraries...  
 yes
@@ -2508,12 +2086,374 @@ config.status: executing depfiles commands
  
 config.status: executing libtool commands
  
+make[3]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
+ 
+gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+mv -f .deps/main.Tpo .deps/main.Po
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT general.lo -MD -MP -MF .deps/general.Tpo -c -o general.lo general.c
+mv -f .deps/general.Tpo .deps/general.Plo
+ 
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT vertex.lo -MD -MP -MF .deps/vertex.Tpo -c -o vertex.lo vertex.c
+mv -f .deps/vertex.Tpo .deps/vertex.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT bond.lo -MD -MP -MF .deps/bond.Tpo -c -o bond.lo bond.c
+mv -f .deps/bond.Tpo .deps/bond.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT triangle.lo -MD -MP -MF .deps/triangle.Tpo -c -o triangle.lo triangle.c
+mv -f .deps/triangle.Tpo .deps/triangle.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT cell.lo -MD -MP -MF .deps/cell.Tpo -c -o cell.lo cell.c
+mv -f .deps/cell.Tpo .deps/cell.Plo
+ 
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT vesicle.lo -MD -MP -MF .deps/vesicle.Tpo -c -o vesicle.lo vesicle.c
+mv -f .deps/vesicle.Tpo .deps/vesicle.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT initial_distribution.lo -MD -MP -MF .deps/initial_distribution.Tpo -c -o initial_distribution.lo initial_distribution.c
+mv -f .deps/initial_distribution.Tpo .deps/initial_distribution.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT io.lo -MD -MP -MF .deps/io.Tpo -c -o io.lo io.c
+mv -f .deps/io.Tpo .deps/io.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT dumpstate.lo -MD -MP -MF .deps/dumpstate.Tpo -c -o dumpstate.lo dumpstate.c
+ 
+mv -f .deps/dumpstate.Tpo .deps/dumpstate.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT frame.lo -MD -MP -MF .deps/frame.Tpo -c -o frame.lo frame.c
+mv -f .deps/frame.Tpo .deps/frame.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT energy.lo -MD -MP -MF .deps/energy.Tpo -c -o energy.lo energy.c
+mv -f .deps/energy.Tpo .deps/energy.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT timestep.lo -MD -MP -MF .deps/timestep.Tpo -c -o timestep.lo timestep.c
+mv -f .deps/timestep.Tpo .deps/timestep.Plo
+ 
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT vertexmove.lo -MD -MP -MF .deps/vertexmove.Tpo -c -o vertexmove.lo vertexmove.c
+mv -f .deps/vertexmove.Tpo .deps/vertexmove.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT bondflip.lo -MD -MP -MF .deps/bondflip.Tpo -c -o bondflip.lo bondflip.c
+mv -f .deps/bondflip.Tpo .deps/bondflip.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT poly.lo -MD -MP -MF .deps/poly.Tpo -c -o poly.lo poly.c
+mv -f .deps/poly.Tpo .deps/poly.Plo
+ 
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT stats.lo -MD -MP -MF .deps/stats.Tpo -c -o stats.lo stats.c
+mv -f .deps/stats.Tpo .deps/stats.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT sh.lo -MD -MP -MF .deps/sh.Tpo -c -o sh.lo sh.c
+mv -f .deps/sh.Tpo .deps/sh.Plo
+ 
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT shcomplex.lo -MD -MP -MF .deps/shcomplex.Tpo -c -o shcomplex.lo shcomplex.c
+mv -f .deps/shcomplex.Tpo .deps/shcomplex.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT constvol.lo -MD -MP -MF .deps/constvol.Tpo -c -o constvol.lo constvol.c
+mv -f .deps/constvol.Tpo .deps/constvol.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT snapshot.lo -MD -MP -MF .deps/snapshot.Tpo -c -o snapshot.lo snapshot.c
+mv -f .deps/snapshot.Tpo .deps/snapshot.Plo
+ 
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT restore.lo -MD -MP -MF .deps/restore.Tpo -c -o restore.lo restore.c
+mv -f .deps/restore.Tpo .deps/restore.Plo
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT cluster.lo -MD -MP -MF .deps/cluster.Tpo -c -o cluster.lo cluster.c
+mv -f .deps/cluster.Tpo .deps/cluster.Plo
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o libtrisurf.la -rpath /usr/local/lib general.lo vertex.lo bond.lo triangle.lo cell.lo vesicle.lo initial_distribution.lo io.lo dumpstate.lo frame.lo energy.lo timestep.lo vertexmove.lo bondflip.lo poly.lo stats.lo sh.lo shcomplex.lo constvol.lo snapshot.lo restore.lo cluster.lo -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
+ 
+rm -f trisurf
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o trisurf main.o libtrisurf.la  -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
+gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT tsmeasure.o -MD -MP -MF .deps/tsmeasure.Tpo -c -o tsmeasure.o tsmeasure.c
+mv -f .deps/tsmeasure.Tpo .deps/tsmeasure.Po
+rm -f tsmeasure
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o tsmeasure tsmeasure.o libtrisurf.la  -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
+ 
+gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/libxml2 -fgnu89-inline  -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math -MT tspoststat.o -MD -MP -MF .deps/tspoststat.Tpo -c -o tspoststat.o tspoststat.c
+mv -f .deps/tspoststat.Tpo .deps/tspoststat.Po
+rm -f tspoststat
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -Wall -Werror -fgnu89-inline -Wno-error=date-time -O3 -ffast-math   -o tspoststat tspoststat.o libtrisurf.la  -lxml2 -lz -lgsl -lgslcblas -lm -lconfuse 
+ 
+make[2]: Leaving directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng/src'
+ 
+make[2]: Entering directory '/opt/workspace/msc_project/project_trisurf/trisurf-ng'
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing aclocal-1.16 
+ 
+ cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing automake-1.16 --gnu
+ 
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoconf
+ 
+/bin/bash ./config.status --recheck
+ 
+running CONFIG_SHELL=/bin/bash /bin/bash ./configure --no-create --no-recursion
+ 
+checking for a BSD-compatible install...  
+/usr/bin/install -c
+ 
+checking whether build environment is sane...  
+yes
+ 
+checking for a thread-safe mkdir -p...  
+/usr/bin/mkdir -p
+ 
+checking for gawk...  
+gawk
+checking whether make sets $(MAKE)...  
+yes
+ 
+checking whether make supports nested variables...  
+yes
+ 
+checking for gcc...  
+gcc
+ 
+checking whether the C compiler works...  
+yes
+ 
+checking for C compiler default output file name... a.out
+ 
+checking for suffix of executables...  
+
+ 
+checking whether we are cross compiling...  
+no
+ 
+checking for suffix of object files...  
+o
+ 
+checking whether we are using the GNU C compiler...  
+yes
+ 
+checking whether gcc accepts -g...  
+yes
+ 
+checking for gcc option to accept ISO C89...  
+none needed
+ 
+checking whether gcc understands -c and -o together...  
+yes
+ 
+checking whether make supports the include directive...  
+yes (GNU style)
+ 
+checking dependency style of gcc...  
+gcc3
+ 
+checking build system type...  
+x86_64-pc-linux-gnu
+ 
+checking host system type... x86_64-pc-linux-gnu
+ 
+checking how to print strings...  
+printf
+ 
+checking for a sed that does not truncate output...  
+/usr/bin/sed
+ 
+checking for grep that handles long lines and -e...  
+/usr/bin/grep
+ 
+checking for egrep...  
+/usr/bin/grep -E
+ 
+checking for fgrep...  
+/usr/bin/grep -F
+ 
+checking for ld used by gcc...  
+/usr/bin/ld
+ 
+checking if the linker (/usr/bin/ld) is GNU ld...  
+yes
+ 
+checking for BSD- or MS-compatible name lister (nm)...  
+/usr/bin/nm -B
+ 
+checking the name lister (/usr/bin/nm -B) interface...  
+BSD nm
+ 
+checking whether ln -s works... yes
+checking the maximum length of command line arguments...  
+1572864
+ 
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format...  
+func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format...  
+func_convert_file_noop
+ 
+checking for /usr/bin/ld option to reload object files...  
+-r
+ 
+checking for objdump...  
+objdump
+ 
+checking how to recognize dependent libraries... pass_all
+checking for dlltool...  
+no
+ 
+checking how to associate runtime and link libraries... printf %s\n
+ 
+checking for ar...  
+ar
+ 
+checking for archiver @FILE support...  
+@
+ 
+checking for strip...  
+strip
+ 
+checking for ranlib...  
+ranlib
+ 
+checking command to parse /usr/bin/nm -B output from gcc object...  
+ok
+ 
+checking for sysroot...  
+no
+ 
+checking for a working dd...  
+/usr/bin/dd
+checking how to truncate binary pipes...  
+/usr/bin/dd bs=4096 count=1
+ 
+checking for mt...  
+mt
+ 
+checking if mt is a manifest tool...  
+no
+ 
+checking how to run the C preprocessor...  
+gcc -E
+ 
+checking for ANSI C header files...  
+yes
+ 
+checking for sys/types.h...  
+yes
+ 
+checking for sys/stat.h...  
+yes
+ 
+checking for stdlib.h...  
+yes
+ 
+checking for string.h...  
+yes
+ 
+checking for memory.h...  
+yes
+ 
+checking for strings.h...  
+yes
+ 
+checking for inttypes.h...  
+yes
+ 
+checking for stdint.h...  
+yes
+ 
+checking for unistd.h...  
+yes
+ 
+checking for dlfcn.h...  
+yes
+ 
+checking for objdir...  
+.libs
+ 
+checking if gcc supports -fno-rtti -fno-exceptions...  
+no
+ 
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works...  
+yes
+ 
+checking if gcc static flag -static works...  
+yes
+checking if gcc supports -c -o file.o...  
+yes
+checking if gcc supports -c -o file.o...  
+(cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries...  
+yes
+ 
+checking whether -lc should be explicitly linked in...  
+no
+ 
+checking dynamic linker characteristics...  
+GNU/Linux ld.so
+ 
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible...  
+yes
+ 
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries...  
+yes
+ 
+checking whether to build static libraries...  
+yes
+ 
+checking for cfg_parse in -lconfuse...  
+yes
+ 
+checking for pow in -lm...  
+yes
+ 
+checking for cblas_dgemm in -lgslcblas...  
+yes
+ 
+checking for gsl_blas_dgemm in -lgsl...  
+yes
+ 
+checking for pkg-config...  
+/usr/bin/pkg-config
+ 
+checking pkg-config is at least version 0.9.0...  
+yes
+ 
+checking for libxml2...  
+yes
+ 
+checking for deflate in -lz...  
+yes
+ 
+checking for stdlib.h... (cached)  
+yes
+ 
+checking for string.h...  
+(cached) yes
+ 
+checking for inline...  
+inline
+ 
+checking whether to enable debugging... no
+ 
+checking for stdlib.h... (cached)  
+yes
+ 
+checking for GNU libc compatible malloc...  
+yes
+ 
+checking for stdlib.h... (cached) yes
+ 
+checking for GNU libc compatible realloc...  
+yes
+ 
+checking for pow...  
+yes
+ 
+checking for sqrt...  
+yes
+ 
+checking for strndup...  
+yes
+ 
+checking that generated files are newer than configure...  
+done
+ 
+configure: creating ./config.status
+ 
+ /bin/bash ./config.status
+ 
+config.status: creating Makefile
+ 
+config.status: creating src/Makefile
+ 
+config.status: creating config.h
+ 
+config.status: config.h is unchanged
+ 
+config.status: executing depfiles commands
+ 
+config.status: executing libtool commands
+ 
 (CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /opt/workspace/msc_project/project_trisurf/trisurf-ng/missing autoheader)
 rm -f stamp-h1
 touch config.h.in
 rm -f stamp-h1
- 
 cd . && /bin/bash ./config.status config.h
+ 
 test -f config.h || rm -f stamp-h1
 test -f config.h || make  stamp-h1
  
